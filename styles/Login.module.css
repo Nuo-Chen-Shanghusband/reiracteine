@@ -1,0 +1,88 @@
+.app {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(#141E41,#243B66);
+}
+
+.login {
+    display: flex;
+    width: 500px;
+    height: auto;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
+    flex-direction: column;
+    align-items: center;
+}
+
+.login h2 {
+    color: #FFF;
+}
+
+.login form {
+    width: 50%;
+}
+
+.login .real,.resu {
+    position: relative;
+    width: 100%;
+}
+
+.login .real input {
+    width: 100%;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: #FFF solid 1px;
+    padding: 10px 0;
+    font-size: 1rem;
+    background-color: transparent;
+    outline: none;
+}
+
+.login .real label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    color: #13B3FA;
+    pointer-events: none;
+    transition: all 0.5s;
+}
+
+.login .real input:focus + label, .login .real input:valid + label {
+    top: -20px;
+    color: #198FB3;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.login .resu {
+    display: flex;
+    height: 25px;
+    margin: 0;
+    margin-bottom: 15px;
+    justify-content: center;
+}
+
+.login .resu input {
+    width: 60%;
+    height: 100%;
+    border: none;
+    color: #FFF;
+    background-color: rgba(36, 151, 228, 0.6);
+    text-align: center;
+    pointer-events: none;
+}
+
+.login span {
+    color: #FFF;
+}
+
+.login span a {
+    color: #ABCDEF;
+}
